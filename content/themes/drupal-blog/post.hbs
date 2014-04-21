@@ -35,7 +35,7 @@
             {{#if author}}
                 <section itemprop="author" itemscope itemtype="http://schema.org/Person" class="author">
                     <img itemprop="image" width="100" src="{{author.image}}"/>
-                    <h4 itemprop="name">{{author.name}}</h4>
+                    <h4 itemprop="name">By {{author.name}}</h4>
                     <p itemprop="description">{{author.bio}}</p>
                 </section>
             {{/if}}
@@ -57,6 +57,15 @@
             </section>
 
         </footer>
+
+
+            <meta name="twitter:card" content="summary">
+ 	    <meta name="twitter:site" content="@yanni_boi">
+	    <meta name="twitter:title" content="{{{title}}}">
+	    <meta name="twitter:description" content="{{excerpt}}">
+	    <meta name="twitter:creator" content="@yanni_boi">
+	    <meta name="twitter:image:src" content="{{@blog.logo}}">
+	    <meta name="twitter:domain" content="blog.six-gs.com">
 
         {{/post}}
 
